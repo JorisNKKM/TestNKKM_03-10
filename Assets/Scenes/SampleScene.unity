@@ -812,7 +812,6 @@ GameObject:
   - component: {fileID: 1952309085}
   - component: {fileID: 1952309084}
   - component: {fileID: 1952309083}
-  - component: {fileID: 1952309086}
   m_Layer: 0
   m_Name: Wallz
   m_TagString: Untagged
@@ -934,24 +933,6 @@ Transform:
   - {fileID: 815136355}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1952309086
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1952309082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f7f1ee50fab761a4ea186fbb86cc2519, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Ball1: {fileID: 7290437220495547249, guid: 4e70cf30503089d4e83aebe0c81926b0, type: 3}
-  Ball2: {fileID: 8877121851672411237, guid: bf61e772bd72c794dbc2e6c717a35c34, type: 3}
-  Ball3: {fileID: 1021170858046265337, guid: 4279aae84d681664aab1fd2cceb2019b, type: 3}
-  Pointer: {fileID: 1663471479}
-  SpawnPosition: {x: 0, y: 4}
-  GetMouseX: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

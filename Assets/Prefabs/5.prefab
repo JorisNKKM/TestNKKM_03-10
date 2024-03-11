@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5975895936437271849}
   - component: {fileID: 3624345979627944606}
   - component: {fileID: 7328021080843737010}
+  - component: {fileID: 4798144757604226251}
   m_Layer: 0
   m_Name: 5
   m_TagString: 5
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0, g: 0.98097944, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -148,3 +149,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &4798144757604226251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6137667367561604922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a270fcd2c1c55cc4c8f7eafd54d56eef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Position: {x: 0, y: 0}
+  SupperBigBall: {fileID: 2744661502781837871, guid: 4e71a1911cc9b674cb624a6a06da278a, type: 3}
