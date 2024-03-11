@@ -7,19 +7,28 @@ public class Spawnd : MonoBehaviour
     public GameObject Ball1;
     public GameObject Ball2;
     public GameObject Ball3;
+    public GameObject Pointer;
     public Vector2 SpawnPosition=new Vector2(0,4);
     public float GetMouseX;
 
-    void Start()
+    /*void Start()
     {
-        RadomSpawn();
-        InvokeRepeating(nameof(RadomSpawn), 0f,1f);
+        
+        
     }
 
     
-    public void Update()
+    public async void Update()
     {
-        GetMouseX = Input.mousePosition.x;
+        GetMouseX = Input.mousePosition.x-500;
+        print(GetMouseX);
+        Pointer.transform.position = new Vector2(GetMouseX, 4);
+        SpawnPosition =new Vector2 (GetMouseX, 4);
+        if (Input.GetKey(KeyCode.Space))
+        {
+            RadomSpawn();
+        }
+        //wait 2 secundes help with that
     }
     public void RadomSpawn()
     {
@@ -27,11 +36,10 @@ public class Spawnd : MonoBehaviour
         if(rnd<=60)
         {
             Instantiate(Ball1, SpawnPosition, Quaternion.identity);
-            Ball1.GetComponent<Rigidbody2D>().isKinematic = false;
+            
             if(Input.GetKey(KeyCode.Mouse0))
             {
-                Ball1.transform.position=new Vector2(GetMouseX,4);
-                Ball1.GetComponent<Rigidbody2D>().isKinematic = true;
+                Ball1.transform.position=new Vector2(GetMouseX,3);
             }
         }
         if(rnd<=90)
@@ -41,6 +49,7 @@ public class Spawnd : MonoBehaviour
         if(rnd>90)
         {
             Instantiate(Ball3, SpawnPosition, Quaternion.identity);
-        }
-    }
+        }*/
 }
+
+
