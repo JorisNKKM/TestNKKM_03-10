@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class Merge7 : MonoBehaviour
 {
     public Vector2 Position;
-
+    public AudioSource Merge;
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("8"))
@@ -15,6 +16,7 @@ public class Merge7 : MonoBehaviour
             Position = collision.transform.position;
             Destroy(collision.gameObject);
             SceneManager.LoadScene("Win");
+            Merge.Play();
         }
     }
 }

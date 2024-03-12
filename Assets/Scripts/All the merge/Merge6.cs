@@ -5,7 +5,8 @@ using UnityEngine;
 public class Merge6 : MonoBehaviour
 {
     public Vector2 Position;
-
+    public AudioSource Merge;
+    
     public GameObject InsaneBigBall;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,6 +15,7 @@ public class Merge6 : MonoBehaviour
             Position = collision.transform.position;
             Destroy(collision.gameObject);
             Instantiate(InsaneBigBall, Position, Quaternion.identity);
+            Merge.Play();
         }
     }
 }

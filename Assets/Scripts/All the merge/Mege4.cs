@@ -5,7 +5,8 @@ using UnityEngine;
 public class Mege4 : MonoBehaviour
 {
     public Vector2 Position;
-
+    public AudioSource Merge;
+    
     public GameObject SupperBigBall;
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -14,6 +15,7 @@ public class Mege4 : MonoBehaviour
             Position = collision.transform.position;
             Destroy(collision.gameObject);
             Instantiate(SupperBigBall, Position, Quaternion.identity);
+            Merge.Play();
         }
     }
 }
