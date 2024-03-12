@@ -24,4 +24,6 @@ Kas yra:
 
 12.Backgound;
 
-13.WebGL link: https://play.unity.com/p/webgl-builds-395688
+13.Random Spawn;
+
+14.WebGL link: https://play.unity.com/p/webgl-builds-395688
