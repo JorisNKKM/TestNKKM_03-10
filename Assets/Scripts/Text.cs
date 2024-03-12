@@ -5,11 +5,13 @@ using TMPro;
 
 public class Text : MonoBehaviour
 {
-    public int count=0;
-
-    
+    public int count;
     public TMP_Text TheText;
-    
+
+    private void Start()
+    {
+        count = 0;
+    }
 
     void Update()
     {
