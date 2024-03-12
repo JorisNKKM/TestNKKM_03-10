@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class BallMerge : MonoBehaviour
 {
     public Vector2 Position;
@@ -16,6 +17,8 @@ public class BallMerge : MonoBehaviour
             Destroy(collision.gameObject);
             Instantiate(MediumSmallBall, Position, Quaternion.identity);
             Merge.Play();
+            Text count2048 = FindObjectOfType<Text>();
+            count2048.Add1();
         }
     }
 }

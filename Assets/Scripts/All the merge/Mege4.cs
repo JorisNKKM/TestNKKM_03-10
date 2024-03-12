@@ -16,6 +16,8 @@ public class Mege4 : MonoBehaviour
             Destroy(collision.gameObject);
             Instantiate(SupperBigBall, Position, Quaternion.identity);
             Merge.Play();
+            Text count2048 = FindObjectOfType<Text>();
+            count2048.Add5();
         }
     }
 }

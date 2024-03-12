@@ -16,6 +16,8 @@ public class Merge5 : MonoBehaviour
             Destroy(collision.gameObject);
             Instantiate(MasiveBigBall, Position, Quaternion.identity);
             Merge.Play();
+            Text count2048 = FindObjectOfType<Text>();
+            count2048.Add6();
         }
     }
 }

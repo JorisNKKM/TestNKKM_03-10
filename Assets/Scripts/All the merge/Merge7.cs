@@ -16,6 +16,8 @@ public class Merge7 : MonoBehaviour
             Destroy(collision.gameObject);
             SceneManager.LoadScene("Win");
             Merge.Play();
+            Text count2048 = FindObjectOfType<Text>();
+            count2048.Add8();
         }
     }
 }
