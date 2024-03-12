@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class WinButton : MonoBehaviour
 {
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnMouseUp()
     {
         SceneManager.LoadScene("SampleScene");
     }
